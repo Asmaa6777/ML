@@ -1,12 +1,14 @@
-🏆 INEGI GCIM Vegetation Mapping Challenge – 9th Place (out of 69 Teams)
+### 🏆 INEGI GCIM Vegetation Mapping Challenge – 9th Place (out of 69 Teams) ###
+
+
 We participated in the INEGI GCIM Vegetation Mapping Challenge on Zindi and secured 9th place out of 69 teams on the private leaderboard.
 
-Problem Statement
+## Problem Statement ##
 The challenge was hosted by INEGI and the United Nations Committee of Experts on Global Geospatial Information Management (UN-GGIM). The goal was to predict the vegetation class for different regions in Mexico based on a variety of features, including elevation, soil type, climate, and land use.
 
 Participants were required to train classification models that assign the correct vegetation class to each data point, contributing to better mapping of natural land cover and supporting global sustainability goals.
 
- Tools & Libraries Used
+ ## Tools & Libraries Used ##
 Python, Pandas, NumPy
 
 scikit-learn, LightGBM, XGBoost, CatBoost
@@ -15,7 +17,7 @@ Seaborn, Matplotlib
 
 Models: RandomForest, BaggingClassifier, IsolationForest
 
- Data Preprocessing
+ ## Data Preprocessing ##
 Label Encoding for categorical columns
 
 Imputation for missing values using SimpleImputer
@@ -26,7 +28,8 @@ Optional PCA for dimensionality reduction
 
 Dataset split with StratifiedKFold for balanced evaluation
 
- Models Trained
+ ## Models Trained ##
+ 
 We trained and compared several models:
 
 ✅ LightGBM
@@ -39,18 +42,14 @@ We trained and compared several models:
 
 ✅ BaggingClassifier
 
-🧪 Also tested: Logistic Regression, Decision Tree, IsolationForest
+ Also tested: Logistic Regression, Decision Tree, IsolationForest
 
- Final Ensemble Strategy
-We selected our top two performing models (LightGBM and XGBoost) and took the mean of their predictions to create the final submission:
+ ## Final Ensemble Strategy ##
+We selected our top two performing models (LightGBM and XGBoost) and took the mean of their predictions 
 
-python
-Copy
-Edit
-final_preds = (xgb_preds + lgbm_preds) / 2
-This simple ensemble strategy gave us a competitive edge and resulted in our top-10 placement.
 
- Evaluation
+ ## Evaluation ##
+ 
 Metric: log_loss
 
 Validation: StratifiedKFold cross-validation
