@@ -1,4 +1,4 @@
-### 🏆 INEGI GCIM Vegetation Mapping Challenge – 9th Place (out of 69 Teams) ###
+# 🏆 INEGI GCIM Vegetation Mapping Challenge – 9th Place (out of 69 Teams) #
 
 
 We participated in the INEGI GCIM Vegetation Mapping Challenge on Zindi and secured 9th place out of 69 teams on the private leaderboard.
